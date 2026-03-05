@@ -1,0 +1,68 @@
+epsout=0 par=metainfo rng=Info!
+
+*======= EMISSIONS & CARBON =======
+epsout=0 par=report_c rng=carbon!a15
+epsout=0 par=cc rng=cc!A30
+epsout=0 par=cc_flows rng=cc!A105
+epsout=0 par=cs rng=cs!
+
+*======= ENERGY SUPPLY & CONVERSION =======
+epsout=0 par=report_supply1 rng=supply!A30
+epsout=0 par=report_import rng=import!
+epsout=0 par=report_export rng=export!
+epsout=0 par=report_en_conv rng=energy!
+
+*======= ELECTRICITY SECTOR =======
+epsout=0 par=report_elec_gen_summedslices rng=elec_gen_year!b1
+epsout=0 par=report_capital_region rng=capital_region!
+epsout=0 par=marginal_el_price rng=marginal_el_price!
+epsout=0 par=curtailment rng=curtailment!b1
+epsout=0 par=report_from_storage rng=from_storage!b1
+epsout=0 par=report_to_storage rng=to_storage!b1
+epsout=0 par=report_elec_gen_slice rng=elec_gen_slice!b1 Rdim=4 Cdim=1
+epsout=0 par=report_slice_lng rng=slice_lng!a1
+
+
+*======= TRANSPORT SECTOR =======
+epsout=0 par=report_transport_energy rng=transpenergy!
+epsout=0 par=report_ship_emis rng=ship_emis!A1
+epsout=0 par=marg_cO2ship rng=marg_cO2ship!
+epsout=0 par=report_transport_mode_emis rng=trans_emis!A1
+epsout=0 par=transp_km rng=ships!
+*======= FUEL PRODUCTION & USE =======
+epsout=0 par=h2 rng=h2!A30
+epsout=0 par=MeOH rng=MeOH!A30
+epsout=0 par=NH3 rng=NH3!A30
+epsout=0 par=h2_use rng=h2_use!A30
+epsout=0 par=MeOH_use rng=MeOH_use!A30
+epsout=0 par=NH3_use rng=NH3_use!A30
+epsout=0 par=petro_use rng=petro_use!A30
+epsout=0 par=LCH4_use rng=LCH4_use!A30
+
+*======= OTHER SECTORS =======
+epsout=0 par=feed_stock rng=feed-stock!
+*epsout=0 par=agrifeedstock rng=agrifeedstock!
+epsout=0 par=urban_heat rng=urban_heat!
+epsout=0 par=rural_heat rng=rural_heat!
+epsout=0 par=solid_heat rng=solid_heat!
+epsout=0 par=non_solid_heat rng=non_solid_heat!
+
+*======= INVESTMENT & CAPACITY =======
+epsout=0 par=report_capital rng=capital!
+epsout=0 par=report_invest rng=invest!
+
+*======= UPSTREAM EMISSIONS =======
+epsout=0 par=report_Upp_Emis_Elec_Avr rng=ProdEmis!a2
+epsout=0 par=report_Upp_Emis_H2_Avr rng=ProdEmis!a15
+epsout=0 par=report_Upp_Emis_MeOH_Avr rng=ProdEmis!a30
+epsout=0 par=report_Upp_Emis_NH3_Avr rng=ProdEmis!a45
+epsout=0 par=report_Upp_Emis_LH2_Avr rng=ProdEmis!a60
+epsout=0 par=report_Upp_Emis_LCH4_Avr rng=ProdEmis!a75
+epsout=0 par=report_Upp_Emis_CH2_Avr rng=ProdEmis!a90
+
+*======= PRICES =======
+epsout=0 par=prices rng=cost_marg!
+epsout=0 par=elprices rng=cost_marg!A200
+epsout=0 par=marginal_fuel_price rng=fuel_marg!
+epsout=0 par=trsp_price rng=trsp_price!
+epsout=0 par=trspfuel_price rng=trspfuel_price!
